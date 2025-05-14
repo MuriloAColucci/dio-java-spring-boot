@@ -1,6 +1,7 @@
 package me.dio.controller.exception;
 
 
+import io.swagger.v3.oas.annotations.Hidden;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.util.NoSuchElementException;
 
+@Hidden
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
